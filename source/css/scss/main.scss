@@ -1,6 +1,11 @@
 /*
- * YOUR STYLES HERE
+ * Architecture inspired by:
+ * @https://www.lullabot.com/articles/bem-atomic-design-a-css-architecture-worth-loving
  */
- body {
-   background-color: skyblue;
- }
+
+ @import '00_base/reset';
+ @import '00_base/mixins';
+ @import '00_base/colors';
+ @import '00_base/space';
+ @import '00_base/typography';
+

@@ -1,0 +1,126 @@
+/*****************************
+ * Typography
+ ****************************/
+
+@include font-face('Josefin Sans', fonts/JosefinSans-Regular/JosefinSans-Regular);
+// @include font-face("Josefin Sans", fonts/JosefinSans-Bold/JosefinSans-Bold, bold);
+// @include font-face("Josefin Sans", fonts/JosefinSans-Italic/JosefinSans-Italic, italic);
+// @include font-face("Josefin Sans", fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic, bold, italic);
+
+$font-sans-serif: 'Josefin Sans', Arial, sans-serif;
+$font-base: 1.25rem;
+
+
+/* General text */
+
+body,
+p,
+a,
+li {
+  font-family: $font-sans-serif;
+  font-size: $font-base;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+p {
+  margin: $space-stack-l;
+}
+
+
+/* Links */
+
+a {
+  color: $color-link;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $color-link--hover;
+    text-decoration: underline;
+  }
+}
+
+
+/* Headings */
+
+h1 {
+  color: $color-primary;
+  font-family: $font-sans-serif;
+  font-size: $font-base * 2.5;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+h2 {
+  color: $color-primary;
+  font-family: $font-sans-serif;
+  font-size: $font-base * 2;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+h3 {
+  color: $color-text;
+  font-family: $font-sans-serif;
+  font-size: $font-base * 1.75;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+h4 {
+  color: $color-text;
+  font-family: $font-sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+
+h5 {
+  color: $color-text;
+  font-family: $font-sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+
+h6 {
+  color: $color-text;
+  font-family: $font-sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin: $space-stack-l;
+}
+
+/* Preformatted text
+ *  @http://mediatemple.net/blog/tips/considerations-for-styling-the-pre-tag/ */
+pre,
+code {
+  font-family: "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-size: $font-base * .8;
+  font-weight: normal;
+}
+
+pre {
+  background-color: $color-gray-90;
+  padding: 0 $space-default $space-default;
+}
+
+code {
+  background-color: $color-gray-95;
+}
+
+mark {
+  background-color: tint($color-primary, 80%);
+}
+/* Horizontal Rule */
+
+hr {
+  border: 0;
+  border-top: 2px solid $color-gray-80;
+  border-bottom: 2px solid $color-white;
+}

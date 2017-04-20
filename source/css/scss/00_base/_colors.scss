@@ -1,0 +1,17 @@
+//  COLOR VARIABLES
+
+// Colors by name
+$color-teal: #1997a9;
+$color-gray-base: hsl(225, 4%, 44%); // #6d6e71;
+$color-gray-60: hsl(225, 4%, 60%);
+$color-gray-70: hsl(225, 4%, 70%);
+$color-gray-80: hsl(225, 4%, 80%);
+$color-gray-90: hsl(225, 4%, 90%);
+$color-gray-95: hsl(225, 4%, 95%);
+$color-white: #fff;
+
+// Colors by role
+$color-primary: $color-teal;
+$color-text: $color-gray-base;
+$color-link: $color-primary;
+$color-link--hover: shade($color-link, 20%);
