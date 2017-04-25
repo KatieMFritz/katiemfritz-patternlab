@@ -3,9 +3,6 @@
  ****************************/
 
 @include font-face('Josefin Sans', fonts/JosefinSans-Regular/JosefinSans-Regular);
-// @include font-face("Josefin Sans", fonts/JosefinSans-Bold/JosefinSans-Bold, bold);
-// @include font-face("Josefin Sans", fonts/JosefinSans-Italic/JosefinSans-Italic, italic);
-// @include font-face("Josefin Sans", fonts/JosefinSans-BoldItalic/JosefinSans-BoldItalic, bold, italic);
 
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-base: 1.25rem;
@@ -94,7 +91,7 @@ h6 {
   margin: $space-stack-l;
 }
 
-/* Preformatted text
+/* Code examples and other special text formatting
  *  @http://mediatemple.net/blog/tips/considerations-for-styling-the-pre-tag/ */
 pre,
 code {
@@ -117,6 +114,8 @@ code {
 mark {
   background-color: tint($color-primary, 80%);
 }
+
+
 /* Horizontal Rule */
 
 hr {
