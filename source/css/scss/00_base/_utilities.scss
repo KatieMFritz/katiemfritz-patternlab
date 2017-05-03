@@ -6,3 +6,9 @@
 .u-center-text {
   text-align: center !important;
 }
+
+.u-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

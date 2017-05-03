@@ -93,5 +93,23 @@
       "class": "icon-social-twitter",
       "description": "Twitter"
     }
+  ],
+  "primaryNav": [
+    {
+      "label": "Home",
+      "url": "#",
+      "class": ""
+    },
+        {
+      "label": "About",
+      "url": "#",
+      "class": "is-active"
+    },
+        {
+      "label": "Services",
+      "url": "#",
+      "class": ""
+    }
+
   ]
 }

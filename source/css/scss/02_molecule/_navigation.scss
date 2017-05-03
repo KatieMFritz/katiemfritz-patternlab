@@ -1,27 +1,88 @@
 .c-nav {
+  // background-color: gray;
+  padding: $space-inset-m;
+}
+
+.c-nav__list {
+  //background-color: skyblue;
   display: block;
   list-style: none;
   margin: 0;
-  overflow: auto;
-  padding: 0;
 }
 
 .c-nav__item {
-  display: inline;
-  margin: $space-inline-xl;
+  //background-color: green;
+  display: inline-table;
+  @media (min-width: 400px) {
+    margin-right: $space-xl;
+    margin-bottom: $space-m;
+  }
   @media (max-width: 400px) {
     margin: $space-inline-m;
+  }
+  &:last-child {
+    margin: 0;
   }
 }
 
 .c-nav__link {
-  &.icon__link:hover {
+  //background-color: orange;
+  padding: $space-s $space-xs;
+  &:hover, &:focus, &.is-active {
+    border-bottom: 3px solid $color-link;
     text-decoration: none;
+  }
+  &.icon__link:hover {
+    border: none;
   }
   .c-nav__item & .icon {
     color: $color-link;
-    &:hover {
+    &:hover, &:focus {
       color:$color-link--hover;
+    }
+  }
+}
+
+/* styles just for primary nav */
+
+.c-nav--primary {
+  text-align: right;
+  @media(max-width: 400px) {
+    display: block;
+    text-align: center;
+    width: 100%;
+    .c-nav__list {
+      padding: 0;
+    }
+    .c-nav__item {
+      width: 100%;
+    }
+    .c-nav__link {
+      display: block;
+      height: 100%;
+      padding: $space-xs;
+    }
+    .c-nav__link:hover, .c-nav__link.is-active {
+      border: none;
+      background-color: $color-link;
+      color: $color-white;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+/* on narrower screens, make the primary nav vertical */
+.c-nav__item--primary {
+  @media (min-width: 400px) and (max-width: 600px) {
+    display: block;
+    margin: $space-stack-m;
+    .c-nav__link {
+      padding: 0 $space-s 0 0;
+    }
+    .c-nav__link:hover, .c-nav__link.is-active {
+      border-bottom: none;
+      border-right: 3px solid $color-link;
     }
   }
 }
