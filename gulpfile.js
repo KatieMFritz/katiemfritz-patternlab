@@ -11,6 +11,10 @@ var gulp = require('gulp'),
   sass = require('gulp-sass');
   sourcemaps = require('gulp-sourcemaps');
 
+// Production Handling
+// Description: Use 'production' variable with 'gulpif'
+// Toggle minifing and optimization for assets
+var production;
 
 /**
  * Normalize all paths to be plain, paths with no leading './',
@@ -249,6 +253,7 @@ function watch() {
 
 gulp.task('patternlab:connect', gulp.series(function (done) {
   browserSync.init({
+    open: false,
     server: {
       baseDir: normalizePath(paths().public.root)
     },
