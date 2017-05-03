@@ -5,6 +5,7 @@
 @include font-face('Josefin Sans', fonts/JosefinSans-Regular/JosefinSans-Regular);
 
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
+$font-serif: 'Josefin Slab', Georgia, serif;
 $font-base: 1.25rem;
 
 
@@ -18,6 +19,11 @@ li {
   font-size: $font-base;
   font-weight: 400;
   line-height: 1.5;
+}
+
+/* just for patternlab */
+.u-font-secondary p {
+  font-family: $font-serif;
 }
 
 p {
