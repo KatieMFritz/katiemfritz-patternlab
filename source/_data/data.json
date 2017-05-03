@@ -98,17 +98,17 @@
   "primaryNav": [
     {
       "label": "Home",
-      "url": "#",
+      "url": "/?p=templates-homepage",
       "class": ""
     },
         {
       "label": "About",
-      "url": "#",
+      "url": "/?p=templates-about",
       "class": "is-active"
     },
         {
       "label": "Services",
-      "url": "#",
+      "url": "/?p=templates-services",
       "class": ""
     }
 
