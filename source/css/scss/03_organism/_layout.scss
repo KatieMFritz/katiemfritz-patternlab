@@ -1,0 +1,32 @@
+.l-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 $space-m;
+}
+
+/* floating images/figures */
+.l-left {
+  float: left;
+  margin: $space-m $space-l $space-m 0;
+}
+
+.l-right {
+  float: right;
+  margin: $space-m 0 $space-m $space-l;
+}
+
+/* not 0 because line-height */
+.l-top {
+  margin-top: $space-s;
+}
+
+.l-bottom {
+  margin-bottom: 0;
+}
+/* This helps paragraphs not get too narrow. @https://css-tricks.com/minimum-paragraph-widths/ */
+p:before {
+  content: "";
+  width: 10em;
+  display: block;
+  overflow: hidden;
+}
