@@ -10,7 +10,8 @@
     "patternlab-node": "^2.0.0",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0",
-    "typeface-josefin-sans": "0.0.22"
+    "typeface-josefin-sans": "0.0.22",
+    "gulp-sourcemaps": "^2.6.0"
   },
   "keywords": [
     "Pattern Lab",
@@ -33,8 +34,5 @@
   "license": "MIT",
   "engines": {
     "node": ">=5.0"
-  },
-  "devDependencies": {
-    "gulp-sourcemaps": "^2.6.0"
   }
 }
