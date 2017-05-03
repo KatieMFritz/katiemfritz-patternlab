@@ -71,5 +71,27 @@
     "long": "20",
     "short": "20"
   },
-  "seconds": "31"
+  "seconds": "31",
+  "icons" : [
+    {
+      "class": "icon-envelope",
+      "description": "Email"
+    },
+    {
+      "class": "icon-social-github",
+      "description": "Github"
+    },
+    {
+      "class": "icon-social-linkedin",
+      "description": "LinkedIn"
+    },
+    {
+      "class": "icon-social-facebook",
+      "description": "Facebook"
+    },
+    {
+      "class": "icon-social-twitter",
+      "description": "Twitter"
+    }
+  ]
 }

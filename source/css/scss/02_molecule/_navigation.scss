@@ -1,0 +1,27 @@
+.c-nav {
+  display: block;
+  list-style: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+.c-nav__item {
+  display: inline;
+  margin: $space-inline-xl;
+  @media (max-width: 400px) {
+    margin: $space-inline-m;
+  }
+}
+
+.c-nav__link {
+  &.icon__link:hover {
+    text-decoration: none;
+  }
+  .c-nav__item & .icon {
+    color: $color-link;
+    &:hover {
+      color:$color-link--hover;
+    }
+  }
+}
