@@ -10,7 +10,7 @@
     },
     {
       "color-name": "$color-gray-light",
-      "hex-code": "#eee"
+      "hex-code": "hsl(225, 4%, 95%)"
     }
   ]
 }

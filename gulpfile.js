@@ -253,6 +253,7 @@ function watch() {
 
 gulp.task('patternlab:connect', gulp.series(function (done) {
   browserSync.init({
+    port: process.env.PORT || 3000,
     open: false,
     server: {
       baseDir: normalizePath(paths().public.root)
