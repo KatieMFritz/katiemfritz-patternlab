@@ -1,0 +1,24 @@
+ol, ul {
+  list-style-position: outside;
+  margin: $space-stack-l;
+  padding-left: $space-l;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: $space-s;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+li > ul, li > ol {
+  margin-top: $space-s;
+}

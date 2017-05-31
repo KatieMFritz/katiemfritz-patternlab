@@ -1,0 +1,26 @@
+.m-service {
+  background: $color-gray-light;
+  //border: 3px dashed $color-primary;
+  margin: 0 auto $space-l;
+  max-width: 32em;
+  padding: $space-inset-l;
+}
+
+.m-service__name {
+
+}
+
+.m-service__price {
+  background: $color-primary;
+  margin-left: -$space-l;
+  margin-right: -$space-l;
+  margin-bottom: -$space-l;
+  padding: $space-inset-m;
+  text-align: right;
+  p {
+    color: $color-white;
+  }
+  & :last-child {
+    margin-bottom: 0;
+  }
+}

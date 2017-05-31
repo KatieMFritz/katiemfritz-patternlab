@@ -101,15 +101,21 @@
       "url": "/?p=templates-homepage",
       "class": ""
     },
-        {
+    {
       "label": "About",
       "url": "/?p=templates-about",
       "class": "is-active"
     },
-        {
+    {
       "label": "Services",
       "url": "/?p=templates-services",
       "class": ""
     }
-  ]
+  ],
+  "service": {
+    "name": "Website Review Package",
+    "description": "<p>Are you generally happy with your website, but want to keep it fresh? I can coach your team through a website review process to clean up old content, catch features that aren’t working, improve search engine optimization, and generally revive your site.</p><p>This is a great habit to do yearly – or more! After the first time, you’ll be equipped to manage future reviews on your own.</p>",
+    "deliverables": "<ul><li>Content inventory of your site</li><li>Document kit for website review</li><li>Weekly coaching sessions (by conference call)</li></ul>",
+    "price": "Starts at $600"
+  }
 }

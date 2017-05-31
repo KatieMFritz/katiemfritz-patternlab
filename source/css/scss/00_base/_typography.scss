@@ -8,7 +8,8 @@
 
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-serif: 'Josefin Slab', Georgia, serif;
-$font-base: 1.25rem;
+$font-base: 1rem;
+$font-color: $color-text;
 
 
 /* General text */
@@ -17,6 +18,7 @@ body,
 p,
 a,
 li {
+  color: $color-text;
   font-family: $font-sans-serif;
   font-size: $font-base;
   font-weight: 400;
@@ -52,7 +54,7 @@ a {
 h1 {
   color: $color-primary;
   font-family: $font-sans-serif;
-  font-size: $font-base * 2.5;
+  font-size: $font-base * 2;
   font-weight: bold;
   margin: $space-stack-l;
 }
@@ -60,9 +62,9 @@ h1 {
 h2 {
   color: $color-primary;
   font-family: $font-sans-serif;
-  font-size: $font-base * 2;
+  font-size: $font-base * 1.5;
   font-weight: bold;
-  margin: $space-stack-l;
+  margin: $space-stack-m;
 }
 
 h3 {

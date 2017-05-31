@@ -1,0 +1,26 @@
+{
+  "1": {
+    "service": {
+      "name": "Website Review Package",
+      "description": "<p>Are you generally happy with your website, but want to keep it fresh? I can coach your team through a website review process to clean up old content, catch features that aren’t working, improve search engine optimization, and generally revive your site.</p><p>This is a great habit to do yearly – or more! After the first time, you’ll be equipped to manage future reviews on your own.</p>",
+      "deliverables": "<ul><li>Content inventory of your site</li><li>Document kit for website review</li><li>Weekly coaching sessions (by conference call)</li></ul>",
+      "price": "Starts at $600"
+    }
+  },
+  "2": {
+    "service": {
+    "name": "Web Strategy Package",
+    "description": "<p>Not ready for a whole new website, but want to make improvements? Need to save money by developing your site in house? This essential package will point you in the right direction. Past clients have found these tools helpful not just for marketing, but also for program delivery.</p>",
+    "deliverables": "<ul><li>Analytics report and custom Google Analytics dashboard</li><li>Content inventory of your current site</li><li>Channel map</li><li>Up to six persona descriptions</li><li>Up to four user journeys</li><li>Voice profile</li><li>Voice/tone/style guide template</li><li>Core content strategy statement</li></ul>",
+    "price": "Starts at $2,500"
+    }
+  },
+  "3": {
+    "service": {
+    "name": "Information Architecture Package",
+    "description": "<p>Can your users find what they need on your website, file system, wiki, or Intranet? If not, it’s getting in the way of your mission. Through user observations, card sorts, tree testing, and first click testing, I’ll refine your navigation menu or folder structure to save time and improve user experience.</p>",
+    "deliverables": "<ul><li>Sitemap or folder structure tailored for your organization</li></ul>",
+    "price": "Starts at $600"
+    }
+  }
+}
