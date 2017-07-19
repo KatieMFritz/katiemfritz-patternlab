@@ -2,13 +2,3 @@
   padding-top: $space-l;
   padding-bottom: $space-l;
 }
-
-.o-service-list {
-  @media (min-width: 64em) {
-    align-items: center;
-    display: grid;
-    grid-column-gap: $space-l;
-    grid-template-columns: 45% 45%;
-    justify-content: space-around;
-  }
-}

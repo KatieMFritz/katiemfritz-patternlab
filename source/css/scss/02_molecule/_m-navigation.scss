@@ -1,6 +1,11 @@
+/* General navigation styles */
 .m-nav {
   // background-color: gray;
   padding: $space-inset-m;
+}
+
+.m-nav__heading {
+  margin: $space-stack-l;
 }
 
 .m-nav__list {
@@ -8,20 +13,21 @@
   display: block;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .m-nav__item {
   //background-color: green;
   display: inline-table;
-  @media (min-width: 400px) {
+  @media (min-width: 550px) {
     margin-right: $space-xl;
     margin-bottom: $space-m;
+    &:last-child {
+      margin: 0;
+    }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     margin: $space-inline-m;
-  }
-  &:last-child {
-    margin: 0;
   }
 }
 
@@ -41,6 +47,11 @@
       color:$color-link--hover;
     }
   }
+}
+
+/* Styles just for services nav */
+.m-nav--service {
+
 }
 
 /* styles just for primary nav */
@@ -86,3 +97,4 @@
     }
   }
 }
+

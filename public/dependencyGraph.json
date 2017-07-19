@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1496264734786,
+  "timestamp": 1500482241810,
   "graph": {
     "options": {
       "directed": true,
@@ -121,6 +121,14 @@
         }
       },
       {
+        "v": "02-molecules\\navigation\\03-service-nav.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-services\\04-templates-services.rendered.html",
+          "lineagePattern": "templates-services"
+        }
+      },
+      {
         "v": "02-molecules\\sections\\banner.mustache",
         "value": {
           "compileState": "clean",
@@ -134,6 +142,12 @@
           "compileState": "clean",
           "lineagePath": "../../patterns/03-organisms-04-service-list-service-list\\03-organisms-04-service-list-service-list.rendered.html",
           "lineagePattern": "organisms-service-list"
+        }
+      },
+      {
+        "v": "02-molecules\\sections\\testimonial.mustache",
+        "value": {
+          "compileState": "clean"
         }
       },
       {
@@ -162,8 +176,8 @@
         "v": "03-organisms\\03-content-area\\content-area.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-homepage\\04-templates-homepage.rendered.html",
-          "lineagePattern": "templates-homepage"
+          "lineagePath": "../../patterns/04-templates-about\\04-templates-about.rendered.html",
+          "lineagePattern": "templates-about"
         }
       },
       {
@@ -263,7 +277,7 @@
       },
       {
         "v": "04-templates\\homepage.mustache",
-        "w": "03-organisms\\03-content-area\\content-area.mustache",
+        "w": "02-molecules\\navigation\\03-service-nav.mustache",
         "value": {}
       },
       {
@@ -274,6 +288,11 @@
       {
         "v": "04-templates\\services.mustache",
         "w": "03-organisms\\01-header\\header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates\\services.mustache",
+        "w": "02-molecules\\navigation\\03-service-nav.mustache",
         "value": {}
       },
       {
