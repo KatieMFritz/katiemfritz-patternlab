@@ -18,6 +18,6 @@ $color-secondary: $color-green;
 $color-accent: $color-orange;
 
 $color-text: $color-gray-base;
-$color-link: $color-primary;
+$color-link: shade($color-primary, 10%);
 $color-link--hover: shade($color-link, 40%);
 $color-gray-light: $color-gray-95;

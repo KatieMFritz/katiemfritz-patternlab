@@ -8,7 +8,7 @@
 
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-serif: 'Josefin Slab', Georgia, serif;
-$font-base: 1rem;
+$font-base: 1.25rem;
 $font-color: $color-text;
 
 
@@ -44,6 +44,7 @@ a {
 
   &:hover, &:focus {
     color: $color-link--hover;
+    outline: none;
     text-decoration: underline;
   }
 }

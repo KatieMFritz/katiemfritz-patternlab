@@ -24,6 +24,13 @@
       "images" : "./public/images",
       "fonts" : "./public/css/fonts",
       "css" : "./public/css"
+    },
+    "prod" : {
+      "root" : "../katiemfritz-nuxt/",
+      "css" : "../katiemfritz-nuxt/assets/css/",
+      "js" : "../katiemfritz-nuxt/assets/js/",
+      "images" : "../katiemfritz-nuxt/assets/images/",
+      "fonts" : "../katiemfritz-nuxt/assets/css/fonts/"
     }
   },
   "styleGuideExcludes": [
@@ -57,7 +64,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": [],
+  "patternExportPatternPartials": ["molecules-banner", "molecules-service-nav", "organisms-header", "organisms-footer"],
   "patternExportDirectory": "./pattern_exports/",
   "cacheBust": true,
   "starterkitSubDir": "dist",

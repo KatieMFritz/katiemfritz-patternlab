@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1500482241810,
+  "timestamp": 1500929723322,
   "graph": {
     "options": {
       "directed": true,
@@ -137,6 +137,12 @@
         }
       },
       {
+        "v": "02-molecules\\sections\\question.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
         "v": "02-molecules\\sections\\service.mustache",
         "value": {
           "compileState": "clean",
@@ -220,6 +226,16 @@
       }
     ],
     "edges": [
+      {
+        "v": "02-molecules\\media\\figure-left.mustache",
+        "w": "01-atoms\\03-images\\portrait.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-molecules\\media\\figure-with-caption.mustache",
+        "w": "01-atoms\\03-images\\portrait.mustache",
+        "value": {}
+      },
       {
         "v": "02-molecules\\media\\logo-link.mustache",
         "w": "01-atoms\\03-images\\logo.mustache",

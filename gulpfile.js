@@ -42,13 +42,15 @@ function normalizePath() {
 // JS copy
 gulp.task('pl-copy:js', function () {
   return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)} )
-    .pipe(gulp.dest(normalizePath(paths().public.js)));
+    .pipe(gulp.dest(normalizePath(paths().public.js)))
+    .pipe(gulp.dest(paths().prod.js))
 });
 
 // Images copy
 gulp.task('pl-copy:img', function () {
   return gulp.src('**/*.*',{cwd: normalizePath(paths().source.images)} )
-    .pipe(gulp.dest(normalizePath(paths().public.images)));
+    .pipe(gulp.dest(normalizePath(paths().public.images)))
+    .pipe(gulp.dest(paths().prod.images))
 });
 
 // Favicon copy
@@ -60,7 +62,8 @@ gulp.task('pl-copy:favicon', function () {
 // Fonts copy
 gulp.task('pl-copy:font', function () {
   return gulp.src('*/*', {cwd: normalizePath(paths().source.fonts)})
-    .pipe(gulp.dest(normalizePath(paths().public.fonts)));
+    .pipe(gulp.dest(normalizePath(paths().public.fonts)))
+    .pipe(gulp.dest(paths().prod.fonts))
 });
 
 // SASS Compilation
@@ -79,6 +82,7 @@ gulp.task('pl-sass', function(){
 gulp.task('pl-copy:css', function () {
   return gulp.src(normalizePath(paths().source.css) + '/*.css')
     .pipe(gulp.dest(normalizePath(paths().public.css)))
+    .pipe(gulp.dest(paths().prod.css))
     .pipe(browserSync.stream());
 });
 
