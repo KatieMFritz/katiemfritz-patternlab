@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1500929723322,
+  "timestamp": 1500933870685,
   "graph": {
     "options": {
       "directed": true,
@@ -124,8 +124,8 @@
         "v": "02-molecules\\navigation\\03-service-nav.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-services\\04-templates-services.rendered.html",
-          "lineagePattern": "templates-services"
+          "lineagePath": "../../patterns/04-templates-services-2\\04-templates-services-2.rendered.html",
+          "lineagePattern": "templates-services-2"
         }
       },
       {
@@ -137,9 +137,11 @@
         }
       },
       {
-        "v": "02-molecules\\sections\\question.mustache",
+        "v": "02-molecules\\sections\\intro.mustache",
         "value": {
-          "compileState": "clean"
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-services\\04-templates-services.rendered.html",
+          "lineagePattern": "templates-services"
         }
       },
       {
@@ -190,6 +192,14 @@
         "v": "03-organisms\\04-service-list\\service-list.mustache",
         "value": {
           "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-services-2\\04-templates-services-2.rendered.html",
+          "lineagePattern": "templates-services-2"
+        }
+      },
+      {
+        "v": "03-organisms\\05-questions-list\\questions-list.mustache",
+        "value": {
+          "compileState": "clean",
           "lineagePath": "../../patterns/04-templates-services\\04-templates-services.rendered.html",
           "lineagePattern": "templates-services"
         }
@@ -202,6 +212,12 @@
       },
       {
         "v": "04-templates\\homepage.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-templates\\services-2.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -302,18 +318,38 @@
         "value": {}
       },
       {
+        "v": "04-templates\\services-2.mustache",
+        "w": "03-organisms\\01-header\\header.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates\\services-2.mustache",
+        "w": "02-molecules\\navigation\\03-service-nav.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates\\services-2.mustache",
+        "w": "03-organisms\\04-service-list\\service-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates\\services-2.mustache",
+        "w": "03-organisms\\02-footer\\footer.mustache",
+        "value": {}
+      },
+      {
         "v": "04-templates\\services.mustache",
         "w": "03-organisms\\01-header\\header.mustache",
         "value": {}
       },
       {
         "v": "04-templates\\services.mustache",
-        "w": "02-molecules\\navigation\\03-service-nav.mustache",
+        "w": "02-molecules\\sections\\intro.mustache",
         "value": {}
       },
       {
         "v": "04-templates\\services.mustache",
-        "w": "03-organisms\\04-service-list\\service-list.mustache",
+        "w": "03-organisms\\05-questions-list\\questions-list.mustache",
         "value": {}
       },
       {
