@@ -4,3 +4,5 @@ patternlab.json
 .sass-cache/*
 /sass-cache
 Thumbs.db
+pattern_exports/
+public/
