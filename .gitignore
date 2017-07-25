@@ -1,11 +1,12 @@
-node_modules/**
-pattern_exports/**
-public/**
 
+pattern_exports
+public
+
+node_modules
 .DS_Store
 Thumbs.db
 patternlab.json
-.sass-cache/*
+.sass-cache
 /sass-cache
 
 
