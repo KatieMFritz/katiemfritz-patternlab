@@ -1,0 +1,19 @@
+.m-figure {
+  background: $color-gray-90;
+  display: table;
+  padding: $space-inset-m;
+}
+
+.m-figure__media {
+  display: block;
+  line-height: 0;
+  width: 100%;
+}
+
+.m-figure__caption {
+  background: $color-gray-90;
+  caption-side: bottom;
+  display: table-caption;
+  font-size: $font-small;
+  padding: 0 $space-m $space-m;
+}

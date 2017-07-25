@@ -6,6 +6,7 @@
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-serif: 'Josefin Slab', Georgia, serif;
 $font-base: 1.25rem;
+$font-small: .8rem;
 $font-color: $color-text;
 
 
@@ -109,7 +110,7 @@ code {
   font-family: 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
   'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
   'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-  font-size: $font-base * .8;
+  font-size: $font-small;
   font-weight: normal;
 }
 

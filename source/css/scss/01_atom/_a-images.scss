@@ -6,6 +6,12 @@
   max-width: 100%;
 }
 
+.a-img--screenshot {
+  border: 2px $color-gray-70 solid;
+  max-width: 50rem;
+  width: 100%;
+}
+
 @import '01_atom/simple-line-icons';
 
 .icon {
