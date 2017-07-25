@@ -43,6 +43,11 @@ function normalizePath() {
 gulp.task('pl-copy:js', function () {
   return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)} )
     .pipe(gulp.dest(normalizePath(paths().public.js)))
+});
+
+// JS copy - to production
+gulp.task('pl-copy-prod:js', function () {
+  return gulp.src('**/*.js', {cwd: normalizePath(paths().source.js)} )
     .pipe(gulp.dest(paths().prod.js))
 });
 
@@ -50,6 +55,11 @@ gulp.task('pl-copy:js', function () {
 gulp.task('pl-copy:img', function () {
   return gulp.src('**/*.*',{cwd: normalizePath(paths().source.images)} )
     .pipe(gulp.dest(normalizePath(paths().public.images)))
+});
+
+// Images copy - to production
+gulp.task('pl-copy-prod:img', function () {
+  return gulp.src('**/*.*',{cwd: normalizePath(paths().source.images)} )
     .pipe(gulp.dest(paths().prod.images))
 });
 
@@ -63,6 +73,11 @@ gulp.task('pl-copy:favicon', function () {
 gulp.task('pl-copy:font', function () {
   return gulp.src('*/*', {cwd: normalizePath(paths().source.fonts)})
     .pipe(gulp.dest(normalizePath(paths().public.fonts)))
+});
+
+// Fonts copy - to production
+gulp.task('pl-copy-prod:font', function () {
+  return gulp.src('*/*', {cwd: normalizePath(paths().source.fonts)})
     .pipe(gulp.dest(paths().prod.fonts))
 });
 
@@ -82,8 +97,13 @@ gulp.task('pl-sass', function(){
 gulp.task('pl-copy:css', function () {
   return gulp.src(normalizePath(paths().source.css) + '/*.css')
     .pipe(gulp.dest(normalizePath(paths().public.css)))
-    .pipe(gulp.dest(paths().prod.css))
     .pipe(browserSync.stream());
+});
+
+// CSS Copy - to production
+gulp.task('pl-copy-prod:css', function () {
+  return gulp.src(normalizePath(paths().source.css) + '/*.css')
+    .pipe(gulp.dest(paths().prod.css))
 });
 
 // Styleguide Copy everything but css
@@ -146,6 +166,13 @@ gulp.task('pl-assets', gulp.series(
   'pl-copy:styleguide',
   'pl-copy:styleguide-css'
 ));
+
+gulp.task('pl-assets-prod', gulp.series(
+  'pl-copy-prod:js',
+  'pl-copy-prod:img',
+  'pl-copy-prod:font',
+  gulp.series('pl-sass', 'pl-copy-prod:css', function(done){done();})
+))
 
 gulp.task('patternlab:version', function (done) {
   patternlab.version();
@@ -295,3 +322,4 @@ gulp.task('patternlab:connect', gulp.series(function (done) {
 gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));
+gulp.task('patternlab:prod', gulp.series('pl-assets-prod'));
