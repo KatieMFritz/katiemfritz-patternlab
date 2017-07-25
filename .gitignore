@@ -1,8 +1,11 @@
-node_modules/
+node_modules/*
+pattern_exports/*
+public/*
+
 .DS_Store
+Thumbs.db
 patternlab.json
 .sass-cache/*
 /sass-cache
-Thumbs.db
-pattern_exports/
-public/
+
+
