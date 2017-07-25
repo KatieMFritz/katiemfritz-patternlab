@@ -1,10 +1,7 @@
 /*****************************
  * Typography
+ * fonts are included with a link in the head
  ****************************/
-
-@include font-face('Josefin Sans', fonts/JosefinSans-Regular/JosefinSans-Regular);
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-serif: 'Josefin Slab', Georgia, serif;
@@ -30,8 +27,11 @@ p {
 }
 
 /* just for patternlab */
-.u-font-secondary p {
-  font-family: $font-serif;
+
+.u-font-secondary {
+  p {
+    font-family: $font-serif;
+  }
 }
 
 /* Links */
@@ -41,7 +41,8 @@ a {
   font-weight: bold;
   text-decoration: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $color-link--hover;
     outline: none;
     text-decoration: underline;
@@ -84,7 +85,8 @@ h4 {
 }
 
 
-h5, h6 {
+h5,
+h6 {
   color: $color-text;
   font-family: $font-sans-serif;
   font-size: $font-base;
@@ -96,17 +98,17 @@ h5, h6 {
 
 hr {
   border: 0;
-  border-top: 2px solid $color-gray-80;
   border-bottom: 2px solid $color-white;
+  border-top: 2px solid $color-gray-80;
 }
 
 /* Code examples and other special text formatting
  *  @http://mediatemple.net/blog/tips/considerations-for-styling-the-pre-tag/ */
 pre,
 code {
-  font-family: "Andale Mono WT", "Andale Mono", "Lucida Console",
-    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-family: 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+  'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
   font-size: $font-base * .8;
   font-weight: normal;
 }

@@ -20,38 +20,41 @@
   //background-color: green;
   display: inline-table;
   @media (min-width: 550px) {
-    margin-right: $space-xl;
     margin-bottom: $space-m;
+    margin-right: $space-xl;
+
     &:last-child {
       margin: 0;
     }
   }
+
   @media (max-width: 550px) {
     margin: $space-inline-m;
   }
 }
 
 .m-nav__link {
-  //background-color: orange;
   padding: $space-s $space-xs;
-  &:hover, &:focus, &.is-active {
+
+  &:hover,
+  &:focus,
+  &.is-active {
     border-bottom: 3px solid $color-link;
     text-decoration: none;
   }
+
   &.icon__link:hover {
-    border: none;
+    border: 0;
   }
+
   .m-nav__item & .icon {
     color: $color-link;
-    &:hover, &:focus {
-      color:$color-link--hover;
+
+    &:hover,
+    &:focus {
+      color: $color-link--hover;
     }
   }
-}
-
-/* Styles just for services nav */
-.m-nav--service {
-
 }
 
 /* styles just for primary nav */
@@ -62,20 +65,25 @@
     display: block;
     text-align: center;
     width: 100%;
+
     .m-nav__list {
       padding: 0;
     }
+
     .m-nav__item {
       width: 100%;
     }
+
     .m-nav__link {
       display: block;
       height: 100%;
       padding: $space-xs;
     }
-    .m-nav__link:hover, .m-nav__link.is-active {
-      border: none;
+
+    .m-nav__link:hover,
+    .m-nav__link.is-active {
       background-color: $color-link;
+      border: 0;
       color: $color-white;
       display: block;
       width: 100%;
@@ -88,11 +96,14 @@
   @media (min-width: 400px) and (max-width: 600px) {
     display: block;
     margin: $space-stack-m;
+
     .m-nav__link {
       padding: 0 $space-s 0 0;
     }
-    .m-nav__link:hover, .m-nav__link.is-active {
-      border-bottom: none;
+
+    .m-nav__link:hover,
+    .m-nav__link.is-active {
+      border-bottom: 0;
       border-right: 3px solid $color-link;
     }
   }

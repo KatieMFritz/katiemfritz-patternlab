@@ -1,0 +1,19 @@
+# File Options
+files:
+  ignore:
+    - '*/vendor/**/*.*'
+# Rule Configuration
+rules:
+  no-css-comments: 0
+  # Nesting
+  declarations-before-nesting: 1
+  force-attribute-nesting: 1
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  # Name Formats
+  class-name-format: 0
+  function-name-format: 1
+  id-name-format: 0
+  mixin-name-format: 1
+  placeholder-name-format: 1
+  variable-name-format: 1

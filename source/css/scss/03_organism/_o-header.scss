@@ -1,10 +1,12 @@
 .o-header {
   background-color: $color-gray-95;
+
   .l-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   @media (max-width: 400px) {
     .m-logo-link {
       margin: auto;

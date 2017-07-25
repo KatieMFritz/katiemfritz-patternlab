@@ -5,8 +5,9 @@
   // margin: 0 auto $space-l;
   // max-width: 32em;
   // padding: $space-inset-l;
+
   &:last-child {
-    border-bottom: none;
+    border-bottom: 0;
   }
 }
 

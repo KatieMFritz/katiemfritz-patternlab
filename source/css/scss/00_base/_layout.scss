@@ -1,15 +1,15 @@
 /* This helps paragraphs not get too narrow. @https://css-tricks.com/minimum-paragraph-widths/ */
-p:before {
-  content: "";
-  width: 10em;
+p::before {
+  content: '';
   display: block;
   overflow: hidden;
+  width: 10em;
 }
 
 /* container to keep things from spreading */
 .l-container {
-  max-width: 50rem;
   margin: 0 auto;
+  max-width: 50rem;
   padding: 0 $space-m;
 }
 

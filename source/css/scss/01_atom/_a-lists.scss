@@ -1,11 +1,15 @@
-ol, ul {
+ol,
+ul {
   list-style-position: outside;
   margin: $space-stack-l;
   padding-left: $space-l;
 }
 
-li ol, li ul {
-  margin: 0;
+/* when lists are nested, do not add margins */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+  margin-top: $space-s;
 }
 
 ul {
@@ -18,11 +22,8 @@ ol {
 
 li {
   margin-bottom: $space-s;
+
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-li > ul, li > ol {
-  margin-top: $space-s;
 }
