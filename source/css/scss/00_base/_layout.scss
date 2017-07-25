@@ -1,3 +1,12 @@
+/* This helps paragraphs not get too narrow. @https://css-tricks.com/minimum-paragraph-widths/ */
+p:before {
+  content: "";
+  width: 10em;
+  display: block;
+  overflow: hidden;
+}
+
+/* container to keep things from spreading */
 .l-container {
   max-width: 50rem;
   margin: 0 auto;
@@ -22,11 +31,4 @@
 
 .l-bottom {
   margin-bottom: 0;
-}
-/* This helps paragraphs not get too narrow. @https://css-tricks.com/minimum-paragraph-widths/ */
-p:before {
-  content: "";
-  width: 10em;
-  display: block;
-  overflow: hidden;
 }

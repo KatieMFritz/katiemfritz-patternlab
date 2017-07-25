@@ -25,15 +25,14 @@ li {
   line-height: 1.5;
 }
 
-/* just for patternlab */
-.u-font-secondary p {
-  font-family: $font-serif;
-}
-
 p {
   margin: $space-stack-l;
 }
 
+/* just for patternlab */
+.u-font-secondary p {
+  font-family: $font-serif;
+}
 
 /* Links */
 
@@ -54,15 +53,15 @@ a {
 
 h1 {
   color: $color-primary;
-  font-family: $font-sans-serif;
+  font-family: $font-serif;
   font-size: $font-base * 2;
   font-weight: bold;
-  margin: $space-stack-l;
+  margin: $space-stack-m;
 }
 
 h2 {
   color: $color-primary;
-  font-family: $font-sans-serif;
+  font-family: $font-serif;
   font-size: $font-base * 1.5;
   font-weight: bold;
   margin: $space-stack-m;
@@ -70,7 +69,7 @@ h2 {
 
 h3 {
   color: $color-text;
-  font-family: $font-sans-serif;
+  font-family: $font-serif;
   font-size: $font-base * 1.25;
   font-weight: bold;
   margin: $space-stack-m;
@@ -78,28 +77,27 @@ h3 {
 
 h4 {
   color: $color-text;
-  font-family: $font-sans-serif;
-  font-size: 1.5em;
+  font-family: $font-serif;
+  font-size: $font-base;
   font-weight: bold;
   margin: $space-stack-m;
 }
 
 
-h5 {
+h5, h6 {
   color: $color-text;
   font-family: $font-sans-serif;
-  font-size: 1.25em;
+  font-size: $font-base;
   font-weight: bold;
-  margin: $space-stack-l;
+  margin: $space-stack-m;
 }
 
+/* Horizontal Rule */
 
-h6 {
-  color: $color-text;
-  font-family: $font-sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  margin: $space-stack-l;
+hr {
+  border: 0;
+  border-top: 2px solid $color-gray-80;
+  border-bottom: 2px solid $color-white;
 }
 
 /* Code examples and other special text formatting
@@ -124,13 +122,4 @@ code {
 
 mark {
   background-color: tint($color-primary, 80%);
-}
-
-
-/* Horizontal Rule */
-
-hr {
-  border: 0;
-  border-top: 2px solid $color-gray-80;
-  border-bottom: 2px solid $color-white;
 }

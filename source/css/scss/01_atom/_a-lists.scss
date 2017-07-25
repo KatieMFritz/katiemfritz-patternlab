@@ -4,6 +4,10 @@ ol, ul {
   padding-left: $space-l;
 }
 
+li ol, li ul {
+  margin: 0;
+}
+
 ul {
   list-style-type: disc;
 }
