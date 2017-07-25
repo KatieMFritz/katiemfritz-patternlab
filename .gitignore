@@ -1,6 +1,6 @@
-node_modules/*
-pattern_exports/*
-public/*
+node_modules/**
+pattern_exports/**
+public/**
 
 .DS_Store
 Thumbs.db
