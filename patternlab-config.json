@@ -12,7 +12,7 @@
       "images" : "./source/images",
       "fonts" : "./source/css/fonts/",
       "css" : "./source/css/",
-      "scss" : "./source/css/scss"
+      "scss" : "./source/css/scss/"
     },
     "public" : {
       "root" : "./public/",
