@@ -3,3 +3,13 @@
   display: flex;
   flex-wrap: nowrap;
 }
+
+.m-cta:hover {
+
+  .a-arrow {
+
+    .a-arrow__point--right {
+      border-left: 36px solid $color-arrows;
+    }
+  }
+}
