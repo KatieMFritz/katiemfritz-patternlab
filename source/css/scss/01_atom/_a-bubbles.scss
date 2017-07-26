@@ -1,0 +1,62 @@
+.a-bubble {
+  background: $color-secondary;
+  border-radius: .5em;
+  color: $color-white;
+  line-height: 1.5;
+  padding: $space-inset-m;
+  position: relative;
+
+  &::after {
+    border: $space-m solid transparent;
+    border-bottom: 0;
+    border-left: 0;
+    border-top-color: $color-secondary;
+    bottom: 0;
+    content: '';
+    height: 0;
+    left: 10%;
+    margin-bottom: (-$space-m);
+    margin-left: (-$space-s);
+    position: absolute;
+    width: 0;
+  }
+
+  strong {
+    font-family: $font-serif;
+    font-size: $font-base * 1.5;
+  }
+
+  &:nth-child(4n+1) {
+    background: $color-secondary;
+
+    &::after {
+      border-top-color: $color-secondary;
+    }
+  }
+
+  &:nth-child(4n+2) {
+    background: $color-accent;
+
+    &::after {
+      border-top-color: $color-accent;
+    }
+  }
+
+  &:nth-child(4n+3) {
+    background: $color-gray-base;
+
+    &::after {
+      border-top-color: $color-gray-base;
+    }
+  }
+
+  &:nth-child(4n+4) {
+    background: $color-primary;
+
+    &::after {
+      border-top-color: $color-primary;
+    }
+  }
+}
+
+// TODO: write a mixin for the different colors

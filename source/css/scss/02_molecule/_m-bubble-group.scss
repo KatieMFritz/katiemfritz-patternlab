@@ -1,0 +1,45 @@
+.m-bubble-group {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+
+  .a-bubble {
+    flex-basis: 12rem;
+    flex-grow: 1;
+    margin: 0 $space-m $space-l 0;
+  }
+}
+
+// .m-question--block {
+//   color: $color-white;
+//   flex-basis: 16rem;
+//   flex-grow: 1;
+//   line-height: 1.5;
+//   margin: 0;
+//   padding: $space-inset-l;
+
+//   strong {
+//     font-family: $font-serif;
+//     font-size: $font-base * 1.5;
+//   }
+
+//   &:nth-child(4n+1) {
+//     background: $color-primary;
+//   }
+
+//   &:nth-child(4n+2) {
+//     background: $color-gray-base;
+//   }
+
+//   &:nth-child(4n+3) {
+//     background: $color-secondary;
+//   }
+
+//   &:nth-child(4n+4) {
+//     background: $color-accent;
+//   }
+// }

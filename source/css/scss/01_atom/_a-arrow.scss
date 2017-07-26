@@ -1,0 +1,34 @@
+.a-arrow {
+  padding-right: $space-s;
+  padding-top: $space-xs;
+  position: relative;
+  width: 100%;
+}
+
+.a-arrow__line {
+  background: $color-arrows;
+  float: left;
+  height: 4px;
+  margin-top: $space-s;
+  position: absolute;
+  width: calc(100% - 24px);
+}
+
+.a-arrow__start--left {
+  background: $color-arrows;
+  border-radius: 50%;
+  float: left;
+  height: 12px;
+  position: absolute;
+  top: 8px;
+  width: 12px;
+}
+
+.a-arrow__point--right {
+  border-bottom: 10px solid transparent;
+  border-left: 24px solid $color-arrows;
+  border-top: 10px solid transparent;
+  float: right;
+  height: 0;
+  width: 0;
+}
