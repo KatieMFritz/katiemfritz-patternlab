@@ -11,6 +11,26 @@ p::before {
   margin: 0 auto;
   max-width: 50rem;
   padding: 0 $space-m;
+  @media (min-width: 50rem) {
+    padding: 0;
+  }
+}
+
+.l-slice {
+  margin-bottom: $space-default;
+  padding-top: $space-default;
+}
+
+.l-slice--l {
+  margin-bottom: $space-l;
+
+  &:first-child {
+    padding-top: $space-l;
+  }
+}
+
+.l-slice--s {
+  margin-bottom: $space-s;
 }
 
 /* floating images/figures */

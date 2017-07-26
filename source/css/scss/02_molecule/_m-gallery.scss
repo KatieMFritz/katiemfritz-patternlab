@@ -1,0 +1,16 @@
+.m-gallery {
+  align-items: center;
+  // background: $color-gray-light;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: $space-m $space-m 0;
+
+  img {
+    margin: $space-inline-m;
+    @media (min-width: 700px) {
+      margin-right: $space-xl;
+    }
+  }
+}
