@@ -1,8 +1,3 @@
-/* General navigation styles */
-// .m-nav {
-//   padding: $space-inset-m;
-// }
-
 .m-nav__heading {
   margin: $space-stack-m;
 }
@@ -60,50 +55,13 @@
 .m-nav--primary {
   text-align: right;
   @media(max-width: 400px) {
-    display: block;
+    font-size: $font-mobile;
+    padding-bottom: $space-s; // o-header has padding-bottom too
+    padding-top: $space-m;
     text-align: center;
     width: 100%;
-
-    .m-nav__list {
-      padding: 0;
-    }
-
-    .m-nav__item {
-      width: 100%;
-    }
-
-    .m-nav__link {
-      display: block;
-      height: 100%;
-      padding: $space-xs;
-    }
-
-    .m-nav__link:hover,
-    .m-nav__link.is-active {
-      background-color: $color-link;
-      border: 0;
-      color: $color-white;
-      display: block;
-      width: 100%;
-    }
   }
-}
-
-/* on narrower screens, make the primary nav vertical */
-.m-nav__item--primary {
   @media (min-width: 400px) and (max-width: 600px) {
-    display: block;
-    margin: $space-stack-m;
-
-    .m-nav__link {
-      padding: 0 $space-s 0 0;
-    }
-
-    .m-nav__link:hover,
-    .m-nav__link.is-active {
-      border-bottom: 0;
-      border-right: 3px solid $color-link;
-    }
+    font-size: $font-mobile;
   }
 }
-
