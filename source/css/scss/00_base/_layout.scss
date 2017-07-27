@@ -37,14 +37,14 @@ p::before {
 // TODO: center images on narrow viewports
 
 .l-left {
-  @media (max-width: 440px) {
+  @media (min-width: 440px) {
     float: left;
     margin: $space-m $space-l $space-m 0;
   }
 }
 
 .l-right {
-  @media (max-width: 440px) {
+  @media (min-width: 440px) {
     float: right;
     margin: $space-m 0 $space-m $space-l;
   }
