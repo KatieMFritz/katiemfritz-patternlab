@@ -6,9 +6,10 @@
 $font-sans-serif: 'Josefin Sans', Arial, sans-serif;
 $font-serif: 'Josefin Slab', Georgia, serif;
 $font-base: 1.25rem;
+$font-mobile: 1rem;
 $font-small: .8rem;
+$font-large: 1.75rem;
 $font-color: $color-text;
-
 
 /* General text */
 
@@ -18,9 +19,13 @@ a,
 li {
   color: $color-text;
   font-family: $font-sans-serif;
-  font-size: $font-base;
+  font-size: $font-mobile;
   font-weight: 400;
   line-height: 1.5;
+
+  @media (min-width: 600px) {
+    font-size: $font-base;
+  }
 }
 
 p {

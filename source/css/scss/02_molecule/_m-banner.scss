@@ -7,9 +7,7 @@
 }
 
 .m-banner--content {
-  color: $color-white;
-  font-family: $font-serif;
-  padding: $space-inset-xl;
+  padding: $space-inset-m;
 
   h1,
   p {
@@ -18,12 +16,12 @@
   }
 
   h1 {
-    font-size: 4rem;
     font-weight: 700;
+    line-height: 1;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   @media (min-width: 600px) and (max-width: 800px) {
@@ -32,15 +30,15 @@
     }
   }
 
-  @media (max-width: 600px) {
-    padding: $space-inset-m;
+  @media (min-width: 800px) {
+    padding: $space-inset-xl;
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 4rem;
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 2rem;
     }
   }
 }

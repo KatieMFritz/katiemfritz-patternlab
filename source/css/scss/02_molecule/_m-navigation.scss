@@ -1,15 +1,13 @@
 /* General navigation styles */
-.m-nav {
-  // background-color: gray;
-  padding: $space-inset-m;
-}
+// .m-nav {
+//   padding: $space-inset-m;
+// }
 
 .m-nav__heading {
-  margin: $space-stack-l;
+  margin: $space-stack-m;
 }
 
 .m-nav__list {
-  //background-color: skyblue;
   display: block;
   list-style: none;
   margin: 0;
@@ -17,19 +15,19 @@
 }
 
 .m-nav__item {
-  //background-color: green;
   display: inline-table;
-  @media (min-width: 550px) {
-    margin-bottom: $space-m;
-    margin-right: $space-xl;
+  margin-right: $space-s;
 
-    &:last-child {
-      margin: 0;
-    }
+  &:last-child {
+    margin: 0;
   }
 
-  @media (max-width: 550px) {
-    margin: $space-inline-m;
+  @media (min-width: 450px) {
+    margin-right: $space-m;
+  }
+
+  @media (min-width: 600px) {
+    margin-right: $space-l;
   }
 }
 

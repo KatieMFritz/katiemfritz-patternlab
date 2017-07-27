@@ -11,7 +11,7 @@ p::before {
   margin: 0 auto;
   max-width: 50rem;
   padding: 0 $space-m;
-  @media (min-width: 50rem) {
+  @media (min-width: 52rem) {
     padding: 0;
   }
 }
@@ -37,13 +37,17 @@ p::before {
 // TODO: center images on narrow viewports
 
 .l-left {
-  float: left;
-  margin: $space-m $space-l $space-m 0;
+  @media (max-width: 440px) {
+    float: left;
+    margin: $space-m $space-l $space-m 0;
+  }
 }
 
 .l-right {
-  float: right;
-  margin: $space-m 0 $space-m $space-l;
+  @media (max-width: 440px) {
+    float: right;
+    margin: $space-m 0 $space-m $space-l;
+  }
 }
 
 /* not 0 because line-height */
