@@ -1,12 +1,16 @@
 @mixin m-figure {
-  background: $color-gray-90;
   display: table;
-  padding: $space-inset-m;
   position: relative;
+}
+
+@mixin border {
+  background: $color-gray-90;
+  padding: $space-inset-m;
 }
 
 .m-figure {
   @include m-figure;
+  @include border;
 }
 
 .m-figure__media {
@@ -18,6 +22,7 @@
 
 .m-figure--caption-below {
   @include m-figure;
+  @include border;
 
   .m-figure__caption {
     background: $color-gray-90;
@@ -42,7 +47,6 @@
     padding: $space-inset-xs;
     position: absolute;
     text-align: center;
-    width: 100%;
   }
 
   &:hover,
