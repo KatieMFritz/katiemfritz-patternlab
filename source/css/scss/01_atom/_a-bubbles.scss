@@ -1,6 +1,7 @@
 // Bubble Variables
 
 $color-bubble-green: shade($color-green, 10%);
+$color-bubble-teal: shade($color-teal, 10%);
 $bubble-border-radius: 8px;
 
 .a-bubble {
@@ -58,10 +59,10 @@ $bubble-border-radius: 8px;
   }
 
   &:nth-child(4n+4) {
-    background: $color-primary;
+    background: $color-bubble-teal;
 
     &::after {
-      border-top-color: $color-primary;
+      border-top-color: $color-bubble-teal;
     }
   }
 }

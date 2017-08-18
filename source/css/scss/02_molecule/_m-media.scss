@@ -1,19 +1,56 @@
-.m-figure {
+@mixin m-figure {
   background: $color-gray-90;
   display: table;
   padding: $space-inset-m;
+  position: relative;
+}
+
+.m-figure {
+  @include m-figure;
 }
 
 .m-figure__media {
   display: block;
   line-height: 0;
+  position: relative;
   width: 100%;
 }
 
-.m-figure__caption {
-  background: $color-gray-90;
-  caption-side: bottom;
-  display: table-caption;
-  font-size: $font-small;
-  padding: 0 $space-m $space-m;
+.m-figure--caption-below {
+  @include m-figure;
+
+  .m-figure__caption {
+    background: $color-gray-90;
+    caption-side: bottom;
+    display: table-caption;
+    font-size: $font-small;
+    padding: 0 $space-m $space-m;
+  }
+}
+
+.m-figure--hidden-caption,
+.m-gallery__item {
+  @include m-figure;
+
+  .m-figure__caption {
+    background: $color-gray-dark;
+    bottom: 0;
+    color: $color-white;
+    font-size: $font-small;
+    left: 0;
+    opacity: 0;
+    padding: $space-inset-xs;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+
+    .m-figure__caption {
+      opacity: 1;
+    }
+  }
 }
