@@ -1,10 +1,13 @@
 //  COLOR VARIABLES
 
 // Colors by name
-$color-teal: #1997a9;
-$color-green: #439539;
-$color-orange: #f89728;
+$color-teal: hsl(188, 74%, 38%)
+; // #1997a9
+$color-green: hsl(113, 45%, 40%); // #439539
+$color-orange: hsl(32, 94%, 56%)
+; // #f89728
 $color-gray-base: hsl(225, 4%, 44%); // #6d6e71;
+$color-gray-20: hsl(225, 4%, 20%);
 $color-gray-60: hsl(225, 4%, 60%);
 $color-gray-70: hsl(225, 4%, 70%);
 $color-gray-80: hsl(225, 4%, 80%);
@@ -16,9 +19,12 @@ $color-white: #fff;
 $color-primary: $color-teal;
 $color-secondary: $color-green;
 $color-accent: $color-orange;
+$color-gray-light: $color-gray-95;
+$color-gray-dark: $color-gray-20;
 
+// Colors by element
 $color-text: $color-gray-base;
-$color-link: shade($color-primary, 10%);
+$color-link: shade($color-primary, 20%);
 $color-link--hover: shade($color-link, 40%);
 $color-arrows: $color-primary;
-$color-gray-light: $color-gray-95;
+

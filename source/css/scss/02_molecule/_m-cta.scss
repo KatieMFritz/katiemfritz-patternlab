@@ -6,10 +6,13 @@
 
 .m-cta:hover {
 
-  .a-arrow {
+  @media(min-width: 260px) {
 
-    .a-arrow__point--right {
-      border-left: 36px solid $color-arrows;
+    .a-arrow {
+
+      .a-arrow__point--right {
+        border-left: 36px solid $color-arrows;
+      }
     }
   }
 }

@@ -64,7 +64,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["molecules-banner", "organisms-header", "organisms-footer"],
+  "patternExportPatternPartials": ["atoms-arrow", "atoms-bubble", "molecules-banner", "molecules-cta", "molecules-intro", "organisms-header", "organisms-footer"],
   "patternExportDirectory": "./pattern_exports/",
   "cacheBust": true,
   "starterkitSubDir": "dist",

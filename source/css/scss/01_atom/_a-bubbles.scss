@@ -1,7 +1,13 @@
+// Bubble Variables
+
+$color-bubble-green: shade($color-green, 10%);
+$bubble-border-radius: 8px;
+
 .a-bubble {
   background: $color-secondary;
-  border-radius: .5em;
+  border-radius: $bubble-border-radius;
   color: $color-white;
+  font-weight: bold;
   line-height: 1.5;
   padding: $space-inset-m;
   position: relative;
@@ -27,15 +33,16 @@
   }
 
   &:nth-child(4n+1) {
-    background: $color-secondary;
+    background: $color-bubble-green;
 
     &::after {
-      border-top-color: $color-secondary;
+      border-top-color: $color-bubble-green;
     }
   }
 
   &:nth-child(4n+2) {
     background: $color-accent;
+    color: $color-gray-dark;
 
     &::after {
       border-top-color: $color-accent;
