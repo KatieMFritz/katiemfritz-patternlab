@@ -31,7 +31,7 @@
 
   &:hover,
   &:focus,
-  &.is-active {
+  &.nuxt-link-active {
     border-bottom: 3px solid $color-link;
     text-decoration: none;
   }

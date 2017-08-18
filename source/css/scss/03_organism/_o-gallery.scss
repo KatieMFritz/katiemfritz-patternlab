@@ -1,4 +1,4 @@
-.m-gallery {
+.o-gallery {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -6,7 +6,7 @@
   justify-content: space-around;
   padding: $space-m $space-m 0;
 
-  .m-gallery__item {
+  .o-gallery__item {
     margin: $space-inline-m;
     @media (min-width: 700px) {
       margin-right: $space-l;
