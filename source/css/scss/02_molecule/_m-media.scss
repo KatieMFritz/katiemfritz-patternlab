@@ -4,7 +4,7 @@
 }
 
 @mixin border {
-  background: $color-gray-90;
+  background: $color-gray-light;
   padding: $space-inset-m;
 }
 
@@ -47,6 +47,7 @@
     padding: $space-inset-xs;
     position: absolute;
     text-align: center;
+    width: 100%;
   }
 
   &:hover,
