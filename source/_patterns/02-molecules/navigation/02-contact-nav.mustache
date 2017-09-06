@@ -3,9 +3,12 @@
   <ul class="m-nav__list">
     {{#icons}}
     <li class="m-nav__item">
-      <a href="#" class="m-nav__link icon__link" title="{{ description }}">
-        <span class="icon {{ class }}"></span>
-        <span class="u-visually-hidden">{{ description }}</span>
+      <a class="a-icon--svg" href="{{ href }}" aria-label="{{ icon-name }}">
+        <svg viewbox="0 0 512 512" role="img">
+          <title>{{ icon-name }}</title>
+          <path d="{{ path }}"/>
+        </svg>
+        <!--[if lt IE 9]><em>{{ icon-name }}</em><![endif]-->
       </a>
     </li>
     {{/icons}}

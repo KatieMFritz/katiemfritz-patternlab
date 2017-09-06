@@ -22,3 +22,69 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+/* SVG icons from https://codepen.io/ruandre/pen/howFi */
+
+.a-icon--svg {
+  color: $color-primary;
+  fill: $color-primary;
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+
+  :hover {
+    color: $color-link--hover;
+    fill: $color-link--hover;
+  }
+}
+
+.a-icon--svg[aria-label] {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    background-color: $color-green;
+    border-radius: 8px;
+    bottom: ($space-l + $space-m);
+    content: attr(aria-label);
+    color: $color-white;
+    display: none;
+    font-size: $font-small;
+    left: 25%;
+    overflow: visible;
+    padding: $space-inset-squish-s;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    z-index: 999;
+  }
+
+  &::before {
+    border: $space-s solid transparent;
+    border-bottom: 0;
+    border-left: 0;
+    border-top-color: $color-secondary;
+    bottom: 0;
+    content: '';
+    display: none;
+    height: 0;
+    left: 25%;
+    margin-bottom: ($space-l + $space-s);
+    margin-left: $space-s;
+    position: absolute;
+    width: 0;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:hover::before,
+  &:focus::before {
+    display: block;
+  }
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
