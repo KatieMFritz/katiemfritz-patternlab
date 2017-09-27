@@ -3,7 +3,7 @@
  * @https://www.lullabot.com/articles/bem-atomic-design-a-css-architecture-worth-loving
  */
 
-@import '00_base/reset';
+@import 'node_modules/normalize.css/normalize';
 @import '00_base/mixins';
 @import '00_base/colors';
 @import '00_base/space';

@@ -1,3 +1,11 @@
+// Link hover/active styles
+
+@mixin link-hover {
+  color: $color-link--hover;
+  outline: none;
+  text-decoration: underline;
+}
+
 /// Slightly lighten a color
 /// @access public
 /// @param {Color} $color - color to tint

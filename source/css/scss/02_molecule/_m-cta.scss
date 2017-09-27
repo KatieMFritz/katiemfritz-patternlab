@@ -4,7 +4,14 @@
   flex-wrap: nowrap;
 }
 
-.m-cta:hover {
+.m-cta:hover,
+.m-cta:focus {
+
+  outline: none;
+
+  a {
+    @include link-hover;
+  }
 
   @media(min-width: 260px) {
 

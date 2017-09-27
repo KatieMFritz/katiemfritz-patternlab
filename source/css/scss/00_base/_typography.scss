@@ -49,9 +49,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $color-link--hover;
-    outline: none;
-    text-decoration: underline;
+    @include link-hover;
   }
 }
 
