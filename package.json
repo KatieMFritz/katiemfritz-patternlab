@@ -1,7 +1,7 @@
 {
-  "name": "edition-node-gulp",
-  "description": "The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
-  "version": "1.4.0",
+  "name": "katiemfritz-patternlab",
+  "description": "Pattern Lab experiments for Katie M Fritz, LLC website. Using PatternLab2, Node/Gulp. ",
+  "version": "1.5.0",
   "dependencies": {
     "browser-sync": "^2.0.0",
     "chalk": "^1.1.3",
@@ -20,21 +20,23 @@
     "Atomic Web Design",
     "Node",
     "Gulp",
-    "Javascript"
+    "Javascript",
+    "Mustache"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/pattern-lab/edition-node-gulp.git"
+    "url": "git://github.com/KatieMFritz/katiemfritz-patternlab.git"
   },
-  "bugs": "https://github.com/pattern-lab/edition-node-gulp/issues",
-  "author": "Brian Muenzenmeyer",
+  "author": "Katie Fritz",
   "scripts": {
     "start": "gulp patternlab:serve",
     "postinstall": "node scripts/postinstall.js",
     "gulp": "gulp -- "
   },
   "license": "MIT",
-  "engines": {},
+  "engines": {
+    "node": "8.5.x"
+  },
   "devDependencies": {
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
