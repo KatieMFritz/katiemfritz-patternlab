@@ -34,9 +34,7 @@
     "gulp": "gulp -- "
   },
   "license": "MIT",
-  "engines": {
-
-  },
+  "engines": {},
   "devDependencies": {
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
