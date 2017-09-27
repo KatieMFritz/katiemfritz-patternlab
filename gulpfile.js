@@ -236,6 +236,15 @@ gulp.task('patternlab:installplugin', function (done) {
 /******************************************************
  * SERVER AND WATCH TASKS
 ******************************************************/
+// Static production server (Heroku)
+gulp.task('serveprod', function() {
+  connect.server({
+    root: public,
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
 // watch task utility functions
 function getSupportedTemplateExtensions() {
   var engines = require('./node_modules/patternlab-node/core/lib/pattern_engines');
