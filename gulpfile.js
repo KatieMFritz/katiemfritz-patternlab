@@ -124,6 +124,34 @@ gulp.task('pl-copy:styleguide-css', function () {
     .pipe(browserSync.stream());
 });
 
+// Create Color Swatches
+// https://www.npmjs.com/package/gulp-sass-json
+// Editing regex? Try https://regex101.com
+
+var sassJson = require('gulp-sass-json');
+var rename = require("gulp-rename");
+var replace = require('gulp-replace');
+
+function colors() {
+  return config.colors;
+}
+
+gulp.task('pl-color-swatches', function () {
+    return gulp
+      .src(path.resolve(colors().paths.scss, colors().filenames.scss))
+      .pipe(sassJson())
+      .pipe(rename(colors().filenames.json))
+
+      .pipe(replace(/\t\"/mg, '\t\t\{\n\t\t\t\"color\-name\"\: \"\$'))
+      .pipe(replace(/",/g, '"\n\t\t\}\,'))
+      .pipe(replace(/(\{\s+"\w+\S+\":\s\"?\$\w+\S+\")/gi, '$1,\n\t\t\t'))
+      .pipe(replace(/(\s\:\s)/gi, '\t\"hex\-code\": '))
+      .pipe(replace(/^{/g, '{\n\t"colors": ['))
+      .pipe(replace(/}$/i, '\t\t\}\n\t\]\n\}'))
+
+      .pipe(gulp.dest(colors().paths.json));
+});
+
 /******************************************************
  * PATTERN LAB CONFIGURATION - API with core library
 ******************************************************/
@@ -198,7 +226,7 @@ gulp.task('patternlab:loadstarterkit', function (done) {
   done();
 });
 
-gulp.task('patternlab:build', gulp.series('pl-assets', build));
+gulp.task('patternlab:build', gulp.series('pl-assets', 'pl-color-swatches', build));
 
 gulp.task('patternlab:installplugin', function (done) {
   patternlab.installplugin(argv.plugin);

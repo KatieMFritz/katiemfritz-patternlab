@@ -33,6 +33,16 @@
       "fonts" : "../katiemfritz-nuxt/assets/css/fonts/"
     }
   },
+  "colors" : {
+    "paths" : {
+      "scss" : "./source/css/scss/00_base/",
+      "json" : "./source/_patterns/00-global/00-colors/"
+    },
+    "filenames" : {
+      "scss" : "_colors.scss",
+      "json" : "00-colors.json"
+    }
+  },
   "styleGuideExcludes": [
   ],
   "defaultPattern": "all",

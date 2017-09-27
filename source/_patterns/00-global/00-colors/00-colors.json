@@ -1,0 +1,84 @@
+{
+	"colors": [
+		{
+			"color-name": "$color-teal",
+			"hex-code": "hsl(188, 74%, 38%)"
+		},
+		{
+			"color-name": "$color-green",
+			"hex-code": "hsl(113, 45%, 40%)"
+		},
+		{
+			"color-name": "$color-orange",
+			"hex-code": "hsl(32, 94%, 56%)"
+		},
+		{
+			"color-name": "$color-gray-base",
+			"hex-code": "hsl(225, 4%, 44%)"
+		},
+		{
+			"color-name": "$color-gray-20",
+			"hex-code": "hsl(225, 4%, 20%)"
+		},
+		{
+			"color-name": "$color-gray-60",
+			"hex-code": "hsl(225, 4%, 60%)"
+		},
+		{
+			"color-name": "$color-gray-70",
+			"hex-code": "hsl(225, 4%, 70%)"
+		},
+		{
+			"color-name": "$color-gray-80",
+			"hex-code": "hsl(225, 4%, 80%)"
+		},
+		{
+			"color-name": "$color-gray-90",
+			"hex-code": "hsl(225, 4%, 90%)"
+		},
+		{
+			"color-name": "$color-gray-95",
+			"hex-code": "hsl(225, 4%, 95%)"
+		},
+		{
+			"color-name": "$color-white",
+			"hex-code": "#fff"
+		},
+		{
+			"color-name": "$color-primary",
+			"hex-code": "$color-teal"
+		},
+		{
+			"color-name": "$color-secondary",
+			"hex-code": "$color-green"
+		},
+		{
+			"color-name": "$color-accent",
+			"hex-code": "$color-orange"
+		},
+		{
+			"color-name": "$color-gray-light",
+			"hex-code": "$color-gray-95"
+		},
+		{
+			"color-name": "$color-gray-dark",
+			"hex-code": "$color-gray-20"
+		},
+		{
+			"color-name": "$color-text",
+			"hex-code": "$color-gray-base"
+		},
+		{
+			"color-name": "$color-link",
+			"hex-code": "shade($color-primary, 20%)"
+		},
+		{
+			"color-name": "$color-link--hover",
+			"hex-code": "shade($color-link, 40%)"
+		},
+		{
+			"color-name": "$color-arrows",
+			"hex-code": "$color-primary"
+		}
+	]
+}

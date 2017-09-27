@@ -38,6 +38,9 @@
     "node": ">=5.0"
   },
   "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass-json": "^1.0.1",
     "sass-lint": "^1.10.2"
   }
 }
